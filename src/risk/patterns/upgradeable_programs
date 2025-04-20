@@ -1,0 +1,4 @@
+# Known upgradeable program patterns
+upgrade_program:discriminator=00000000
+set_admin:accounts=admin(S,W)
+change_authority:data_layout=u8 variant

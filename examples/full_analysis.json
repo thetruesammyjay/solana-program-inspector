@@ -1,0 +1,31 @@
+{
+  "program_id": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+  "instructions": [
+    {
+      "discriminator": "12a34b56",
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "admin",
+          "is_signer": true,
+          "is_writable": true,
+          "is_pda": false
+        }
+      ],
+      "data_layout": "u64 amount, u8 decimals"
+    }
+  ],
+  "risks": [
+    {
+      "level": 3,
+      "category": "Freeze Authority",
+      "description": "Program can freeze assets",
+      "mitigation": "Verify freeze authority is properly managed"
+    }
+  ],
+  "stats": {
+    "instruction_count": 5,
+    "risky_instructions": 1,
+    "unknown_instructions": 2
+  }
+}

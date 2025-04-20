@@ -1,0 +1,3 @@
+# Format: discriminator|name|account1,account2,...
+12a34b56|initialize|admin(S,W),state(W)
+34c56d78|transfer|source(W),dest(W),auth(S)
