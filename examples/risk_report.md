@@ -71,11 +71,12 @@
 ---
 ## 🚨 Security Advisories
 
-{% if advisories %}
-| Advisory ID | Severity | Affected | Patched Version |
-|-------------|----------|----------|-----------------|
-{% for adv in advisories %}| `{{ adv.id }}` | {{ '🟥' if adv.severity >=4 else '🟨' }} {{ adv.severity }}/5 | {{ adv.affected_programs|join(', ') }} | {{ adv.patched_versions|default('N/A') }} |
-{% endfor %}
-{% else %}
+| Advisory ID | Severity | Affected Programs       | Patched Version |
+|-------------|----------|-------------------------|-----------------|
+| `ADV-001`   | 🟥 5/5   | transfer, upgrade       | v1.2.3          |
+| `ADV-002`   | 🟨 3/5   | initialize              | N/A             |
+
+---
+
 ✅ No known advisories for this program
-{% endif %}
+
