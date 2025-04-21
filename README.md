@@ -177,11 +177,11 @@ cargo run -- analyze --program <ID> --rpc <PRIVATE_RPC_URL>
 ```
 ### 5. Ghidra Plugin Issues
 **Debugging Steps**:
-    1. Make sure Ghidra is added to PATH:
+    - 1. Make sure Ghidra is added to PATH:
     ```cmd
     setx PATH "%PATH%;C:\ghidra_<version>"
     ```
-    2. Run analysis manually:
+    - 2. Run analysis manually:
     ```powershell
     .\ghidraRun .\scripts\ghidra_plugin.py
     ```
